@@ -1,0 +1,5 @@
+[2021-05-15 04:06:45,057] INFO [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions (state.change.logger)
+[2021-05-15 04:45:24,695] INFO [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0) for 0 partitions (state.change.logger)
+[2021-05-15 04:45:24,709] INFO [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(1) for 0 partitions (state.change.logger)
+[2021-05-15 04:46:37,032] INFO [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(0, 1) for 0 partitions (state.change.logger)
+[2021-05-15 04:46:37,033] INFO [Controller id=0 epoch=1] Sending UpdateMetadata request to brokers HashSet(2) for 0 partitions (state.change.logger)
