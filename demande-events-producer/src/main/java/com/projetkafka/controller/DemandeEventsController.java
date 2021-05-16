@@ -28,9 +28,9 @@ public class DemandeEventsController {
 
         //invoke kafka producer
         log.info("before sendDemandeEvent");
-        // demandeEventProducer.sendDemandeEvent(demandeEvent);
-        SendResult<Integer, String> sendResult = demandeEventProducer.sendDemandeEventSynchronous(demandeEvent);
-        log.info("SendResult is {} ", sendResult.toString());
+        //demandeEventProducer.sendDemandeEvent(libraryEvent);
+        demandeEventProducer.sendEventEvent_Approach2(demandeEvent);
+        //log.info("SendResult is {} ", sendResult.toString());
         log.info("after sendDemandeEvent");
         return ResponseEntity.status(HttpStatus.CREATED).body(demandeEvent);
     }
