@@ -31,7 +31,7 @@ public class DemandeEventsController {
         // demandeEventProducer.sendDemandeEvent(demandeEvent);
         SendResult<Integer, String> sendResult = demandeEventProducer.sendDemandeEventSynchronous(demandeEvent);
         log.info("SendResult is {} ", sendResult.toString());
-        log.info("after sendLibraryEvent");
+        log.info("after sendDemandeEvent");
         return ResponseEntity.status(HttpStatus.CREATED).body(demandeEvent);
     }
 }
