@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class DemandeEvent {
 
     private Integer demandeEventId;
+    private DemandeEventType demandeEventType;
     private Aide aide;
 
 }
