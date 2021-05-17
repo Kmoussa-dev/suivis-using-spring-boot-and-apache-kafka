@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data//generate actual getters and setters and tostring
+@Data
 @Builder
 public class DemandeEvent {
 

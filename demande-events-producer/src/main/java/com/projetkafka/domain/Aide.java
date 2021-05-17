@@ -8,11 +8,13 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data//generate actual getters and setters and tostring
+@Data
 @Builder
 public class Aide {
 
     private Integer aideId;
-    private String titre;
+    private String format;
+    private String numEtudiant;
+    private String typeAide;
     private String description;
 }
