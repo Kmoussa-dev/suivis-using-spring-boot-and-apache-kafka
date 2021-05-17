@@ -85,7 +85,7 @@ public class DemandeEventProducer {
 
     }
 
-    public void sendEventEvent_Approach2(DemandeEvent demandeEvent) throws JsonProcessingException {
+    public void sendDemandeEvent_Approach2(DemandeEvent demandeEvent) throws JsonProcessingException {
 
         Integer key = demandeEvent.getDemandeEventId();
         String value = objectMapper.writeValueAsString(demandeEvent);
