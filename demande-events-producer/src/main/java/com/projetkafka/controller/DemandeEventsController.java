@@ -24,7 +24,7 @@ public class DemandeEventsController {
     @Autowired
     DemandeEventProducer demandeEventProducer;
 
-    @PostMapping("/v1/demandeevent")
+    @PostMapping("/Aide/nouvelle_demande")
     public ResponseEntity<DemandeEvent> postDemandeEvent(@RequestBody DemandeEvent demandeEvent) throws JsonProcessingException, ExecutionException, InterruptedException, TimeoutException {
 
         demandeEvent.setDemandeEventType(DemandeEventType.NEW);
@@ -32,7 +32,7 @@ public class DemandeEventsController {
         return ResponseEntity.status(HttpStatus.CREATED).body(demandeEvent);
     }
 
-    @PutMapping("/v1/demandeevent")
+    @PutMapping("/Aide/modifier_demande")
     public ResponseEntity<?> putDemandeEvent(@RequestBody DemandeEvent demandeEvent) throws JsonProcessingException{
 
         if(demandeEvent.getDemandeEventId()==null){
